@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">android-tutorial</string>
-    <string name="edit_message">Enter a message</string>
-    <string name="button_send">Send</string>
+    <!-- TODO(4) Add string value for EditText and Button -->
 </resources>

@@ -1,27 +1,21 @@
 package com.poapper.android_tutorial;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "com.poapper.android_tutorial.MESSAGE";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-    public void sendMessage(View view) {
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText editText = (EditText) findViewById(R.id.editText);
+    // TODO(7) Add function name sendMessage with return type void, and argument View view
+    // TODO(9) Write a code that sends the contents of EditText to DisplayMessageActivity with opening it
 
-        String message = editText.getText().toString();
 
-        intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
-    }
+    // TODO(8) Create a new Activity name DisplayMessageActivity
+    // TODO(10) Add TextView to DisplayMessageActivity with id
+    // TODO(11) Implement the part for receiving Intent from MainActivity inside onCreate
+    // TODO(12) Set parent activity of DisplayMessageActivity to MainActivity
 }
